@@ -1,0 +1,14 @@
+body {
+    background-color: skyblue;
+}
+
+.example-wrapper table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.example-wrapper th,
+.example-wrapper td {
+    padding: 8px; /* Ajoutez de l'espace entre le texte et la bordure de la cellule */
+    border: 1px solid #ddd; /* Ajoute une bordure pour séparer les cellules */
+    text-align: center; /* Centrer le texte dans les cellules */
+}

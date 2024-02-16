@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ImportController!{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th>Ville</th>
+                <th>Date</th>
+                <th>Température</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item.cityName }}</td>
+                    <td>{{ item.date }}</td>
+                    <td><strong>{{ item.temperature }}</strong></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
